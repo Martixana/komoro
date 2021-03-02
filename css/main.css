@@ -1,7 +1,7 @@
 body{
 	background-image: url('../img/fatherson.jpg');
 	background-repeat: no-repeat;
-	/*height: 90%;*/
+	
 }
 
 #overlay {
@@ -90,41 +90,58 @@ a:hover{
 
 /*Media Queries*/
 
-@media screen and (max-width: 500px){
-	div{ 
-		position:static;
-		/*border:none;*/ 
-		display: block;
-		text-align: center;
-		/* margin-top: 0px;*/
-		 margin-left: 0px;
-		 z-index: 15;
-		 /*margin-bottom:10%*/;
-		 }
-}
+
 @media screen and (max-width: 1120px){
+  
+  body{
+	background-image:none;
+	background-color: rgba(188, 247, 204,0.7);
+	
+}
+
+   #overlay {
+   	  display: none;
+}
+
+   div{ 
+		position:static;
+		border:none; 
+	   /* display: block;*/
+		text-align: center;
+		/*border: 1px solid #8f0b4d;*/
+		/**/
+		/* margin-top: 0px;*/
+		/* margin-left: 0px;
+		 z-index: 15;*/
+		 /*margin-bottom:10%*/
+		 }
+
   nav{
   	 /* display:block;*/
-  	  /*text-align: center;*/
+  	  text-align: center;
   	  position: static;
 	  margin-left: 0px;
-	  margin-top: 18%;
+	 /* margin-top: 18%;*/
 
 		 }
-}
-@media screen and (max-width: 1120px){
-  a{
+
+	.without_overlay{
+		display:block;
+		position: static;
+	}
+
+   a{
+   display:inline-block;
    font-weight: 400;
-   font-size: 85%;
+   font-size: 75%;
    letter-spacing: 0px;
-   margin: 1%;
+   margin: 0%;
    padding:0%;
 	  
 		 }
-}
 
-@media screen and (max-width: 1120px){
-  h1{
+
+	h1{
   	position: static;
   	text-align: justify;
   	text-justify:inter-word;
@@ -135,4 +152,26 @@ a:hover{
   	  /*max-width: 40%;*/
   	  margin-top: 13%;
 		 }
+
 }
+
+@media screen and (max-width: 660px){
+  nav{
+  	display:block;
+	  
+		 }
+}
+
+/*@media screen and (max-width: 1120px){
+  h1{
+  	position: static;
+  	text-align: justify;
+  	text-justify:inter-word;
+  	padding: 1%;
+  	margin:5%;
+  	 /* display: none;*/
+  	  /*font-size: 0.98em;*/
+  	  /*max-width: 40%;*/
+/*  	  margin-top: 13%;
+		 }
+}*/
